@@ -1,0 +1,169 @@
+[debug] [2020-11-13T18:19:42.168Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T18:19:42.170Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-13T18:19:42.171Z] CLI Version:   8.16.1
+[debug] [2020-11-13T18:19:42.171Z] Platform:      win32
+[debug] [2020-11-13T18:19:42.171Z] Node Version:  v15.0.1
+[debug] [2020-11-13T18:19:42.172Z] Time:          Fri Nov 13 2020 12:19:42 GMT-0600 (hora estándar central)
+[debug] [2020-11-13T18:19:42.172Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T18:19:42.172Z] 
+[debug] [2020-11-13T18:19:42.179Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T18:19:42.179Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\joblisting
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-demos. 
+[debug] [2020-11-13T18:20:12.545Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-11-13T18:20:12.546Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-11-13T18:20:13.066Z] <<< HTTP RESPONSE 200 {"date":"Fri, 13 Nov 2020 18:20:13 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T18:20:13.124Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos  
+ 
+[debug] [2020-11-13T18:20:13.695Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 13 Nov 2020 18:20:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T18:20:13.695Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-11-13T18:20:13.733Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-11-13T18:20:14.110Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Program Files\nodejs\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Program Files\nodejs\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:327:20)
+    at Request.EventEmitter.emit (node:domain:486:12)
+    at Request.<anonymous> (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:327:20)
+    at Request.EventEmitter.emit (node:domain:486:12)
+    at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:433:28)
+    at IncomingMessage.emit (node:events:339:22)
+    at IncomingMessage.EventEmitter.emit (node:domain:486:12)
+    at endReadableNT (node:internal/streams/readable:1289:12)
+    at processTicksAndRejections (node:internal/process/task_queues:80:21)
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-11-13T18:20:28.529Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T18:20:28.531Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-13T18:20:28.531Z] CLI Version:   8.16.1
+[debug] [2020-11-13T18:20:28.532Z] Platform:      win32
+[debug] [2020-11-13T18:20:28.532Z] Node Version:  v15.0.1
+[debug] [2020-11-13T18:20:28.533Z] Time:          Fri Nov 13 2020 12:20:28 GMT-0600 (hora estándar central)
+[debug] [2020-11-13T18:20:28.533Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T18:20:28.533Z] 
+[debug] [2020-11-13T18:20:28.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T18:20:28.540Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\joblisting
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-demos. 
+[debug] [2020-11-13T18:20:48.692Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos  
+ 
+[debug] [2020-11-13T18:20:49.548Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 13 Nov 2020 18:20:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T18:20:49.549Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-11-13T18:20:49.557Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-11-13T18:20:50.114Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Program Files\nodejs\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Program Files\nodejs\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:327:20)
+    at Request.EventEmitter.emit (node:domain:486:12)
+    at Request.<anonymous> (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:327:20)
+    at Request.EventEmitter.emit (node:domain:486:12)
+    at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:433:28)
+    at IncomingMessage.emit (node:events:339:22)
+    at IncomingMessage.EventEmitter.emit (node:domain:486:12)
+    at endReadableNT (node:internal/streams/readable:1289:12)
+    at processTicksAndRejections (node:internal/process/task_queues:80:21)
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-11-13T18:20:57.512Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T18:20:57.514Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-11-13T18:20:57.515Z] CLI Version:   8.16.1
+[debug] [2020-11-13T18:20:57.515Z] Platform:      win32
+[debug] [2020-11-13T18:20:57.515Z] Node Version:  v15.0.1
+[debug] [2020-11-13T18:20:57.516Z] Time:          Fri Nov 13 2020 12:20:57 GMT-0600 (hora estándar central)
+[debug] [2020-11-13T18:20:57.516Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T18:20:57.516Z] 
+[debug] [2020-11-13T18:20:57.522Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T18:20:57.523Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\joblisting
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using fireship-demos. 
+[debug] [2020-11-13T18:21:10.978Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fireship-demos  
+ 
+[debug] [2020-11-13T18:21:11.564Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 13 Nov 2020 18:21:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-13T18:21:11.565Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-11-13T18:21:11.573Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-11-13T18:21:12.080Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Program Files\nodejs\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Program Files\nodejs\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (node:events:327:20)
+    at Request.EventEmitter.emit (node:domain:486:12)
+    at Request.<anonymous> (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (node:events:327:20)
+    at Request.EventEmitter.emit (node:domain:486:12)
+    at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (node:events:433:28)
+    at IncomingMessage.emit (node:events:339:22)
+    at IncomingMessage.EventEmitter.emit (node:domain:486:12)
+    at endReadableNT (node:internal/streams/readable:1289:12)
+    at processTicksAndRejections (node:internal/process/task_queues:80:21)
+[error] 
+[error] Error: Failed to get Firebase project fireship-demos. Please make sure the project exists and your account has permission to access it.

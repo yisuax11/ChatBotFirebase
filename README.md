@@ -1,2 +1,2 @@
 # ChatBotFirebase
-A 30 min chatbot with React and Firebase
+Check out here: https://fireship-demos.web.app/
